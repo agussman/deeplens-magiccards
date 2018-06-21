@@ -27,7 +27,7 @@ Most Amazon SageMaker algorithms work best when you use the optimized protobuf r
 This table of Image Classification algorithms seems useful:
 https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html
 
-
+We're doing Image Recognition or Object Detection, not Image Classification.
 
 
 
@@ -43,3 +43,6 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 4) [ResNet for Traffic Sign Classification With PyTorch](https://towardsdatascience.com/resnet-for-traffic-sign-classification-with-pytorch-5883a97bbaa3)
 5) [Using TensorFlow for ALPR/ANPR](https://matthewearl.github.io/2016/05/06/cnn-anpr/)
 6) [Training Data Formats](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html)
+7) [MXNet Iterators and im2rec.py](https://mxnet.incubator.apache.org/tutorials/basic/data.html?highlight=im2rec)
+8) [Counting Objects with MXNet and SageMaker (good read, involves using your own data)](https://cosminsanda.com/posts/counting-object-with-mxnet-and-sagemaker/)
+9) [Implementing Object Detection in Machine Learning for Flag Cards with MXNet](https://medium.com/ymedialabs-innovation/implementing-object-detection-in-machine-learning-for-flag-cards-with-mxnet-6bc276bb0b14)
