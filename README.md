@@ -46,3 +46,4 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 7) [MXNet Iterators and im2rec.py](https://mxnet.incubator.apache.org/tutorials/basic/data.html?highlight=im2rec)
 8) [Counting Objects with MXNet and SageMaker (good read, involves using your own data)](https://cosminsanda.com/posts/counting-object-with-mxnet-and-sagemaker/)
 9) [Implementing Object Detection in Machine Learning for Flag Cards with MXNet](https://medium.com/ymedialabs-innovation/implementing-object-detection-in-machine-learning-for-flag-cards-with-mxnet-6bc276bb0b14)
+10) [MXNET BYOM for SageMaker](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/mxnet_mnist_byom/mxnet_mnist.ipynb)
