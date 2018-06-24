@@ -29,7 +29,8 @@ https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-p
 
 We're doing Image Recognition or Object Detection, not Image Classification.
 
-
+SSD resizes training images to 300x300?
+https://github.com/zhreshold/mxnet-ssd/issues/81
 
 # Tips and Troubleshooting
 
