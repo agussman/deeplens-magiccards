@@ -32,6 +32,9 @@ We're doing Image Recognition or Object Detection, not Image Classification.
 SSD resizes training images to 300x300?
 https://github.com/zhreshold/mxnet-ssd/issues/81
 
+Going through these steps: https://cosminsanda.com/posts/counting-object-with-mxnet-and-sagemaker/
+
+
 # Tips and Troubleshooting
 
 If you need to change your WiFi network, you'll need to use a pin to hit the "Reset" button on the back. This will re-activate the DeepLens' WiFi network. You can then reconnect to it and add the new network (it will remember previous networks).
