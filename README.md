@@ -53,3 +53,4 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 10) [MXNET BYOM for SageMaker](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/mxnet_mnist_byom/mxnet_mnist.ipynb)
 11) [Classifying traffics igns with mxnet](https://www.oreilly.com/ideas/classifying-traffic-signs-with-mxnet-an-introduction-to-computer-vision-with-neural-networks)
 12) [Multi Object Detection with MXNet Gluon and SSD](https://gluon.mxnet.io/chapter08_computer-vision/object-detection.html)
+13) [imgaug- python library for augmenting images for machine learning projects](https://github.com/aleju/imgaug)
