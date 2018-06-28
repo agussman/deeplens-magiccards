@@ -34,6 +34,18 @@ https://github.com/zhreshold/mxnet-ssd/issues/81
 
 Going through these steps: https://cosminsanda.com/posts/counting-object-with-mxnet-and-sagemaker/
 
+# Doing stuff
+
+```
+$ mkvirtualenv deeplens-magiccards
+(deeplens-magiccards) $ pip install ipython
+(deeplens-magiccards) $ pip install jupyter
+```
+Because I am a fool who installed anaconda, I have to start jupyter like this:
+```
+(deeplens-magiccards) deeplens-magiccards $ /Users/agussman/.virtualenvs/deeplens-magiccards/bin/jupyter notebook
+```
+
 
 # Tips and Troubleshooting
 
