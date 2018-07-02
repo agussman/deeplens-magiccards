@@ -46,6 +46,12 @@ Because I am a fool who installed anaconda, I have to start jupyter like this:
 (deeplens-magiccards) deeplens-magiccards $ /Users/agussman/.virtualenvs/deeplens-magiccards/bin/jupyter notebook
 ```
 
+ImageNet Dining Room Tables:
+http://image-net.org/synset?wnid=n03200906#
+http://image-net.org/api/text/imagenet.synset.geturls?wnid=n03201035
+
+
+
 
 # Tips and Troubleshooting
 
