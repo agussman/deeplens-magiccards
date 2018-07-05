@@ -72,3 +72,6 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 11) [Classifying traffics igns with mxnet](https://www.oreilly.com/ideas/classifying-traffic-signs-with-mxnet-an-introduction-to-computer-vision-with-neural-networks)
 12) [Multi Object Detection with MXNet Gluon and SSD](https://gluon.mxnet.io/chapter08_computer-vision/object-detection.html)
 13) [imgaug- python library for augmenting images for machine learning projects](https://github.com/aleju/imgaug)
+14) [Augmentor: image augmentation library for Python](https://github.com/mdbloice/Augmentor)
+14) [Python library for grabbing images from the web and randomly modifying them](https://github.com/tomahim/py-image-dataset-generator)
+15) [SynDataGeneration: cut paste and learn](https://github.com/debidatta/syndata-generation)
