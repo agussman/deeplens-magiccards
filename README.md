@@ -75,3 +75,4 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 14) [Augmentor: image augmentation library for Python](https://github.com/mdbloice/Augmentor)
 14) [Python library for grabbing images from the web and randomly modifying them](https://github.com/tomahim/py-image-dataset-generator)
 15) [SynDataGeneration: cut paste and learn](https://github.com/debidatta/syndata-generation)
+16) [Composing IMages with Python for Synthetic Datasets](https://www.immersivelimit.com/tutorials/composing-images-with-python-for-synthetic-datasets)
