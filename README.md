@@ -41,6 +41,7 @@ $ mkvirtualenv deeplens-magiccards
 (deeplens-magiccards) $ pip install ipython
 (deeplens-magiccards) $ pip install jupyter
 (deeplens-magiccards) $ pip install numpy
+$ pip install mxnet
 (deeplens-magiccards) $ pip install Pillow
 ```
 Because I am a fool who installed anaconda, I have to start jupyter like this:
