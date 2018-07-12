@@ -80,3 +80,5 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 15) [SynDataGeneration: cut paste and learn](https://github.com/debidatta/syndata-generation)
 16) [Composing Images with Python for Synthetic Datasets](https://www.immersivelimit.com/tutorials/composing-images-with-python-for-synthetic-datasets)
 17) [Instructions on creating a .rec file for Image Detection](https://mxnet.incubator.apache.org/versions/master/api/python/image/image.html)
+18) [Reading/Writing RecordIO files](https://mxnet.incubator.apache.org/tutorials/basic/data.html)
+19) [Preparing Data](https://mxnet.incubator.apache.org/faq/finetune.html)
