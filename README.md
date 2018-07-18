@@ -43,6 +43,7 @@ $ mkvirtualenv deeplens-magiccards
 (deeplens-magiccards) $ pip install numpy
 $ pip install mxnet
 (deeplens-magiccards) $ pip install Pillow
+$ pip install opencv-python
 ```
 Because I am a fool who installed anaconda, I have to start jupyter like this:
 ```
