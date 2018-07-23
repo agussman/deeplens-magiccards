@@ -41,6 +41,7 @@ $ mkvirtualenv deeplens-magiccards
 (deeplens-magiccards) $ pip install ipython
 (deeplens-magiccards) $ pip install jupyter
 (deeplens-magiccards) $ pip install numpy
+(deeplens-magiccards) $ pip install matplotlib
 $ pip install mxnet
 (deeplens-magiccards) $ pip install Pillow
 $ pip install opencv-python
