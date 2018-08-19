@@ -85,3 +85,4 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 18) [Reading/Writing RecordIO files](https://mxnet.incubator.apache.org/tutorials/basic/data.html)
 19) [Preparing Data](https://mxnet.incubator.apache.org/faq/finetune.html)
 20) [Saving and Loading Gluon Models](https://mxnet.incubator.apache.org/tutorials/gluon/save_load_params.html)
+21) [SageMaker Object Detection with RecordIO](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/object_detection_pascalvoc_coco/object_detection_recordio_format.ipynb)
