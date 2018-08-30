@@ -56,7 +56,7 @@ http://image-net.org/synset?wnid=n03200906#
 http://image-net.org/api/text/imagenet.synset.geturls?wnid=n03201035
 
 
-
+In trying to get sagemaker to work, I created a Role via the sagemaker wizard. But then when I launched a notebook instance, to do the training, I had to create a Policy that allowed the notebook's execution role to iam:GetRole the sagemaker-wizard Role? This didn't seem right.
 
 # Tips and Troubleshooting
 
