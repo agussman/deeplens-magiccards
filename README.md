@@ -58,6 +58,11 @@ http://image-net.org/api/text/imagenet.synset.geturls?wnid=n03201035
 
 In trying to get sagemaker to work, I created a Role via the sagemaker wizard. But then when I launched a notebook instance, to do the training, I had to create a Policy that allowed the notebook's execution role to iam:GetRole the sagemaker-wizard Role? This didn't seem right.
 
+Confirmed that you can launch a SageMaker training job from a local notebook instance. However, you'll need to put in a request to raise your instance limit type (I used `ml.p2.xlarge`). Note that this is different from the `p2.xlarge` instance type, the `ml.` matters. Also, this instance type isn't one of the options in the dropdown. You may also need to specify that it's for Sagemaker training. Basically, it took me about 6 tries of back and forth with AWS support until they increased my limit and I stopped getting the error:
+```
+ResourceLimitExceeded: An error occurred (ResourceLimitExceeded) when calling the CreateTrainingJob operation: The account-level service limit 'ml.p2.xlarge for training job usage' is 0 Instances, with current utilization of 0 Instances and a request delta of 1 Instances. Please contact AWS support to request an increase for this limit.
+```
+
 # Tips and Troubleshooting
 
 If you need to change your WiFi network, you'll need to use a pin to hit the "Reset" button on the back. This will re-activate the DeepLens' WiFi network. You can then reconnect to it and add the new network (it will remember previous networks).
