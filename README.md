@@ -63,6 +63,9 @@ Confirmed that you can launch a SageMaker training job from a local notebook ins
 ResourceLimitExceeded: An error occurred (ResourceLimitExceeded) when calling the CreateTrainingJob operation: The account-level service limit 'ml.p2.xlarge for training job usage' is 0 Instances, with current utilization of 0 Instances and a request delta of 1 Instances. Please contact AWS support to request an increase for this limit.
 ```
 
+Another error you may encounter is "An error occurred during deployment. Model download failed". I'm still trouble shooting this.
+
+
 # Tips and Troubleshooting
 
 If you need to change your WiFi network, you'll need to use a pin to hit the "Reset" button on the back. This will re-activate the DeepLens' WiFi network. You can then reconnect to it and add the new network (it will remember previous networks).
