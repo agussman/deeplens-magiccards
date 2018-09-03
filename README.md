@@ -63,7 +63,11 @@ Confirmed that you can launch a SageMaker training job from a local notebook ins
 ResourceLimitExceeded: An error occurred (ResourceLimitExceeded) when calling the CreateTrainingJob operation: The account-level service limit 'ml.p2.xlarge for training job usage' is 0 Instances, with current utilization of 0 Instances and a request delta of 1 Instances. Please contact AWS support to request an increase for this limit.
 ```
 
-Another error you may encounter is "An error occurred during deployment. Model download failed". I'm still trouble shooting this.
+Another issue with training is that the training job will need to be able to access your S3 buckets. Ostensibly you can tag the bucket/object with `SageMaker` and a value of `true`. I think that works, but it got wonky when I tried to upload the results to `Validation`. I ended up creating a new Policy that gave pretty full S3 rights and added it to the Role created via the sagemaker wizard. It might have worked if I'd pre-created `validation/test.rec` and tagged the empty file with `SageMaker=true`.
+
+
+
+Another error you may encounter is "An error occurred during deployment. Model download failed". I was able to fix this by turning it off and back on and trying again.
 
 
 # Tips and Troubleshooting
@@ -94,3 +98,5 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 19) [Preparing Data](https://mxnet.incubator.apache.org/faq/finetune.html)
 20) [Saving and Loading Gluon Models](https://mxnet.incubator.apache.org/tutorials/gluon/save_load_params.html)
 21) [SageMaker Object Detection with RecordIO](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/object_detection_pascalvoc_coco/object_detection_recordio_format.ipynb)
+22) [Import your custom SageMaker model to DeepLens](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-import-from-sagemaker.html)
+23) [Create a custom project from your model](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-create-custom-project.html)
