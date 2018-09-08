@@ -100,3 +100,5 @@ If you need to change your WiFi network, you'll need to use a pin to hit the "Re
 21) [SageMaker Object Detection with RecordIO](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/object_detection_pascalvoc_coco/object_detection_recordio_format.ipynb)
 22) [Import your custom SageMaker model to DeepLens](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-import-from-sagemaker.html)
 23) [Create a custom project from your model](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-create-custom-project.html)
+24) [Helpful instructions on running SageMaker locally (wish I'd found this earlier)](https://medium.com/akeneo-labs/machine-learning-workflow-with-sagemaker-b83b293337ff)
+
