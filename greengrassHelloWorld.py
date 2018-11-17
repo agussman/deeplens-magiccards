@@ -12,6 +12,7 @@ import numpy as np
 import awscam
 import cv2
 import greengrasssdk
+import mo
 
 class LocalDisplay(Thread):
     """ Class for facilitating the local display of inference results
@@ -79,11 +80,7 @@ def greengrass_infinite_infer_run():
         # the number of labels is small we create a dictionary that will help us convert
         # the machine labels to human readable labels.
         model_type = 'ssd'
-        output_map = {1: 'aeroplane', 2: 'bicycle', 3: 'bird', 4: 'boat', 5: 'bottle', 6: 'bus',
-                      7 : 'car', 8 : 'cat', 9 : 'chair', 10 : 'cow', 11 : 'dinning table',
-                      12 : 'dog', 13 : 'horse', 14 : 'motorbike', 15 : 'person',
-                      16 : 'pottedplant', 17 : 'sheep', 18 : 'sofa', 19 : 'train',
-                      20 : 'tvmonitor'}
+        output_map = {1: 'card'}
         # Create an IoT client for sending to messages to the cloud.
         client = greengrasssdk.client('iot-data')
         iot_topic = '$aws/things/{}/infer'.format(os.environ['AWS_IOT_THING_NAME'])
@@ -91,18 +88,21 @@ def greengrass_infinite_infer_run():
         # file that the image can be rendered locally.
         local_display = LocalDisplay('480p')
         local_display.start()
-        # The sample projects come with optimized artifacts, hence only the artifact
         # path is required.
-        model_path = '/opt/awscam/artifacts/mxnet_deploy_ssd_resnet50_300_FP16_FUSED.xml'
+        # The height and width of the training set images
+        input_height = 300
+        input_width = 300
+        # The sample projects come with optimized artifacts, hence only the artifact
+        # Instructions: Section 9.c.i https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-inference-lambda-create.html
+        #model_path = '/opt/awscam/artifacts/mxnet_deploy_ssd_resnet50_300_FP16_FUSED.xml'
+        model_name = 'model_algo_1'
+        error, model_path = mo.optimize(model_name, input_width, input_height)
         # Load the model onto the GPU.
         client.publish(topic=iot_topic, payload='Loading object detection model')
         model = awscam.Model(model_path, {'GPU': 1})
         client.publish(topic=iot_topic, payload='Object detection model loaded')
         # Set the threshold for detection
         detection_threshold = 0.25
-        # The height and width of the training set images
-        input_height = 300
-        input_width = 300
         # Do inference until the lambda is killed.
         while True:
             # Get a frame from the video stream
