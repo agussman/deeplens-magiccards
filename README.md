@@ -74,6 +74,8 @@ Another error you may encounter is "An error occurred during deployment. Model d
 
 If you need to change your WiFi network, you'll need to use a pin to hit the "Reset" button on the back. This will re-activate the DeepLens' WiFi network. You can then reconnect to it and add the new network (it will remember previous networks).
 
+There are useful logs in:
+CloudWatch > Log Groups > /aws/greengrass/Lambda/us-east-1/<ID>/deeplens_admin_model_downloader
 
 # References
 1) [Build your own object classification model in SageMaker and import it to DeepLens](https://aws.amazon.com/blogs/machine-learning/build-your-own-object-classification-model-in-sagemaker-and-import-it-to-deeplens/)
