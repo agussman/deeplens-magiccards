@@ -41,6 +41,7 @@ class LocalDisplay(Thread):
         """ Overridden method that continually dumps images to the desired
             FIFO file.
         """
+        print("About to run")
         # Path to the FIFO file. The lambda only has permissions to the tmp
         # directory. Pointing to a FIFO file in another directory
         # will cause the lambda to crash.
@@ -76,7 +77,7 @@ class LocalDisplay(Thread):
 def greengrass_infinite_infer_run():
     """ Entry point of the lambda function"""
     try:
-
+        print("About to greengrass_infinite_infer_run()")
         # Create an IoT client for sending to messages to the cloud.
         client = greengrasssdk.client('iot-data')
         iot_topic = '$aws/things/{}/infer'.format(os.environ['AWS_IOT_THING_NAME'])
