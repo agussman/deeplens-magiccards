@@ -47,7 +47,7 @@ def greengrass_infinite_infer_run():
         results_thread.start()
         
         # Send a starting message to the AWS IoT console.
-        client.publish(topic=iotTopic, payload="About to do nothing)
+        client.publish(topic=iotTopic, payload="About to do nothing")
 
         ret, frame = awscam.getLastFrame()
 
