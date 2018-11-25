@@ -121,3 +121,7 @@ def greengrass_infinite_infer_run():
 
 greengrass_infinite_infer_run()
 
+# This is a dummy handler and will not be invoked.
+# Instead, the code is executed in an infinite loop for our example.
+def function_handler(event, context):
+    return
