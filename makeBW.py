@@ -51,8 +51,11 @@ def greengrass_infinite_infer_run():
 
         ret, frame = awscam.getLastFrame()
 
+        # Convert to grayscale
+        gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
         global jpeg
-        ret,jpeg = cv2.imencode('.jpg', frame)
+        ret,jpeg = cv2.imencode('.jpg', gray_frame)
             
     except Exception as e:
         msg = "Test failed: " + str(e)
