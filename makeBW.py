@@ -39,10 +39,6 @@ class FIFO_Thread(Thread):
 
 def greengrass_infinite_infer_run():
     try:
-        input_width = 300
-        input_height = 300
-        max_threshold = 0.25
-
         results_thread = FIFO_Thread()
         results_thread.start()
         
