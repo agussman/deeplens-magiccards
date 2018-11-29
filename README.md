@@ -79,7 +79,7 @@ A frequent error when deploying is the message: "an error occurred during deploy
 
 `[ERROR]-das_mutter.py:292,Caught exception when trying to download model: HTTPSConnectionPool(host='s3.amazonaws.com', port=443): Read timed out.`
 
-
+Downloading is slow and fails inexplicably. 
 
 
 
