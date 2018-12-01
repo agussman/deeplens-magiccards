@@ -111,3 +111,4 @@ Downloading is slow and fails inexplicably.
 24) [Helpful instructions on running SageMaker locally (wish I'd found this earlier)](https://medium.com/akeneo-labs/machine-learning-workflow-with-sagemaker-b83b293337ff)
 25) [Using Pipe input_mode (and why it's better)](https://aws.amazon.com/blogs/machine-learning/using-pipe-input-mode-for-amazon-sagemaker-algorithms/)
 26) [AWS DeepLens Project Tutorial on Head Pose Detection](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-tutorials.html)
+27) [American Sign Language detection](https://github.com/bmeudre/deeplens-asl)
