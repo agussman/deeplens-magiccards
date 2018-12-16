@@ -109,9 +109,9 @@ def greengrass_infinite_infer_run():
             # for more information about the cv2.putText method.
             # Method signature: image, text, origin, font face, font scale, color,
             # and tickness
-            # cv2.putText(frame, "Project Stream"),
-            #             (0, text_offset),
-            #             cv2.FONT_HERSHEY_SIMPLEX, 2.5, (255, 165, 20), 6)                    
+            cv2.putText(frame, "Project Stream"),
+                        (0, text_offset),
+                        cv2.FONT_HERSHEY_SIMPLEX, 2.5, (255, 165, 20), 6)                    
             # Set the next frame in the local display stream.
             local_display.set_frame_data(frame)
             # Send results to the cloud
