@@ -102,16 +102,16 @@ def greengrass_infinite_infer_run():
             # See https://docs.opencv.org/3.4.1/d6/d6e/group__imgproc__draw.html
             # for more information about the cv2.rectangle method.
             # Method signature: image, point1, point2, color, and tickness.
-            cv2.rectangle(frame, (0, 0), (40, 20), (255, 165, 20), 10)
+            frame = cv2.rectangle(frame, (0, 0), (40, 20), (255, 165, 20), 10)
             # Amount to offset the label/probability text above the bounding box.
-            text_offset = 15
+            #text_offset = 15
             # See https://docs.opencv.org/3.4.1/d6/d6e/group__imgproc__draw.html
             # for more information about the cv2.putText method.
             # Method signature: image, text, origin, font face, font scale, color,
             # and tickness
-            cv2.putText(frame, "Project Stream"),
-                        (0, text_offset),
-                        cv2.FONT_HERSHEY_SIMPLEX, 2.5, (255, 165, 20), 6)                    
+            #cv2.putText(frame, "Project Stream"),
+            #            (0, text_offset),
+            #            cv2.FONT_HERSHEY_SIMPLEX, 2.5, (255, 165, 20), 6)                    
             # Set the next frame in the local display stream.
             local_display.set_frame_data(frame)
             # Send results to the cloud
